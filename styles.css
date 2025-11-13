@@ -1,0 +1,156 @@
+/* CASCADING STYLESHEET - FOLHA DE ESTILO EM CASCATA
+    SELETOR (QUEM EU DEVO ESTILIZAR)
+    PROPRIEDADE (O QUE EU DEVO ALTERAR)
+    VALOR (O VALOR QUE EU QUERO COLOCAR NA PROPRIEDADE
+    * (Asterisco) edita e configura TUDO
+    Sempre utilizar essa config no começo de qualquer .CSS
+
+    */
+
+* {
+    margin: 0;
+    /* margem externa do objeto */
+    padding: 0;
+    /* margem interna do objeto */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    /* 
+        top - cima
+        botton - baixo
+        left - esquerda
+        right - direita
+    */
+}
+
+.caixa-conteudo {
+    width: 100%;
+    /* largura */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*espaço entre os itens*/
+}
+
+.caixa-textos {
+    width: 600px;
+}
+
+h1 {
+    color: #333;
+    /* Cores 
+        nome
+        código rgb
+        código hex
+    */
+    font-size: 60px;
+    /* tamanho da fonte */
+    font-weight: 600;
+    /* grossura da fonte */
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    background: #017143;
+    /* cor de fundo */
+    color: #ffffff;
+    border-radius: 40px;
+    /* cantos arredondados */
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    /* muda o ponteiro do mouse */
+    transition: 0.5s;
+    /* transição do efeito no button:hover */
+}
+
+button:hover {
+    background: #018950;
+
+}
+
+.toplogo {
+    width: 80px;
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 320px;
+    
+}
+
+.copao {
+    width: 400px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.copao:hover {
+    width: 420px;
+    transform: translateY(-30);
+}
+
+
+menu {
+    display: flex;
+    justify-content: center;
+}
+
+.copinho {
+    align-items: center;
+    width: 80px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.copinho:hover {
+    width: 100px;
+    transform: translateY(-30);
+}
+
+.circulo {
+    background: #017143;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
+
+.dev {
+    background: #170153;
+    color: #ffffff;
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.dev:hover {
+    background: #240086;
+}
